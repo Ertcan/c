@@ -1,0 +1,72 @@
+#include<stdio.h>
+#include<stdlib.h>
+#include <locale.h>
+#include <windows.h>
+int main(){
+    setlocale(LC_ALL, "turkish");
+    int sayi, a, d;
+	
+	printf("\ntoplama için 1'e  1\nçikarma icin 2'ye  2\nçarpma icin 3'e  3\nbölme için 4'e basiniz.");
+	scanf("%d", &sayi);
+	double c , b;
+	char e,h,q;
+	
+	for(b=1;b<b+1;b++)
+	{
+	if(sayi==1)
+	{
+	printf("toplama iþlemini seçtiniz. a+b=?");
+	printf("klavyeden bir sayý giriniz.");
+	scanf("%lf" ,&c);
+	printf("klavyeden bir ikinci sayý giriniz.");
+	scanf("%lf", &b);
+	printf("\niþlemin cevabý: %0.f + %0.f = %0.f ",c,b,c+b);
+    }
+    else if(sayi==2)
+    {
+    printf("cikarma iþlemi seçtiniz. a-b=?");
+    printf("klavyeden bir sayi giriniz.");
+	scanf("%f" ,&c);
+	printf("klavyeden bir ikinci sayý giriniz.");
+	scanf("%f", &b);
+	printf("\niþlemin cevabý: %f - %f =%lf ",c,b,c-b);
+	}
+	else if(sayi==3)
+	{
+    printf("çarpma iþlemi seçtiniz. axb=?");
+    printf("klavyeden bir sayi giriniz.");
+	scanf("%f" ,&c);
+	printf("klavyeden bir ikinci sayý giriniz.");
+	scanf("%f", &b);
+	printf("\niþlemin cevabý: %f * %f =%lf ",c,b,c*b);
+	}
+	else if(sayi==4)
+	{
+    printf("bölme iþlemi seçtiniz. a/b=?");
+    printf("klavyeden bir sayi giriniz.");
+	scanf("%f" ,&c);
+	printf("klavyeden bir ikinci sayý giriniz.");
+	scanf("%f", &b);
+	printf("\niþlemin cevabý: %f / %f =%lf ",c,b,c/b);
+	}
+	else
+	{
+		printf("....hatalý giriþ yaptýnýz....");
+	}
+	for(d=2;d<=2;d++){
+	printf("Baþka bir iþlem yapmak ister misiniz? (e/h) ");
+	scanf("%s",&q);
+	if(q=='e')
+	{
+	printf("\ntoplama için 1'e  1\nçýkarma için 2'ye  2\nçarpma için 3'e  3\nbölme için 4'e basýnýz.");
+	scanf("%d", &sayi);
+	}
+	else
+	{
+		printf("bizi kullandýðýnýz icin teþekkürler");
+	}
+	
+}
+}
+}
+
